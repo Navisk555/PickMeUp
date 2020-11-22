@@ -8,7 +8,7 @@ import BooksType.Romantic;
 public class GameRule {
     Scanner sc = new Scanner(System.in);
     
-    public BooksType.BooksName ranDomBook() {
+    public BooksType.BooksName randomBook() {
         System.out.println("แนวนิยายที่คุณต้องการอ่าน");
         System.out.println("(1)ระทึกขวัญ");
         System.out.println("(2)แฟนตาซี");
@@ -23,12 +23,18 @@ public class GameRule {
                 return new Romantic().romantic();
         }
         System.out.println("กรุณาเลือกใหม่อีกครั้งครับ/ค่ะ\n");
-        return ranDomBook();
+        return randomBook();
     }
     
     public byte selectChoice(){
         byte select = sc.nextByte();
         if(select>2){System.out.println("กรุณาเลือกใหม่อีกครั้งครับ/ค่ะ");}
+        return select ;
+    }
+    
+    public byte selectMain(){
+        byte select = sc.nextByte();
+        if(select>3){System.out.println("กรุณาเลือกใหม่อีกครั้งครับ/ค่ะ");}
         return select ;
     }
     

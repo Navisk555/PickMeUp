@@ -1,6 +1,7 @@
 package BooksType;
 
 import Games.GameRule;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FanTasy {
@@ -21,7 +22,7 @@ public class FanTasy {
         System.out.println("(2)ศึกษาประวัติศาสตร์");
         System.out.println("(3)เอาชีวิตรอด");
         System.out.print("Enter : ");
-        this.select = gm.selectChoice();
+        this.select = gm.selectMain();
     }while(select>3) ;
         switch (select) { //เวทย์มนต์ ประวัติศาสตร์ เอาชีวิตรอด
             

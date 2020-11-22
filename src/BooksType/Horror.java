@@ -20,7 +20,7 @@ public class Horror {
             System.out.println("(2)สืบสวน");
             System.out.println("(3)เอาตัวรอด");
             System.out.print("Enter : ");
-            this.select = gm.selectChoice();
+            this.select = gm.selectMain();
         } while (select > 3);
         switch (select) { //ผี สืบสวน เอาตัวรอด
             case 1: //ผี              
